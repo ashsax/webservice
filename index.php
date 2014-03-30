@@ -2,7 +2,6 @@
 
 	// process client request (VIA URL)
 	header("Content-Type:application/json");
-	include 'function.php';
 	if (!empty($_GET['name'])) {
 		//
 		$name=$_GET['name'];
