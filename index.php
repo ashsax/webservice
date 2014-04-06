@@ -12,8 +12,6 @@
 		</form>
 		
 		<?php
-/* 			echo "POST DATA: " . var_export($_POST, TRUE) . "<br>"; */
-/* 			echo "http_build_query: " . http_build_query($_POST) . "<br>"; */
 			if (isset($_POST['submit'])) {
 				$ch = curl_init();
 				curl_setopt($ch, CURLOPT_URL, 'http://localhost/~ash/webservice/api.php');
