@@ -1,0 +1,10 @@
+CREATE DATABASE objects;
+USE objects;
+CREATE TABLE objs (   id INT(11) NOT NULL AUTO_INCREMENT,  color VARCHAR(30) NOT NULL,   PRIMARY KEY (id) );
+INSERT INTO objs (color) VALUES ('red');
+INSERT INTO objs (color) VALUES ('green');
+INSERT INTO objs (color) VALUES ('blue');
+INSERT INTO objs (color) VALUES ('red');
+INSERT INTO objs (color) VALUES ('blue');
+INSERT INTO objs (color) VALUES ('green');
+GRANT ALL PRIVILEGES ON objects.* TO 'ash'@'localhost' IDENTIFIED BY 'secret';
